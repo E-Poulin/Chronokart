@@ -1,0 +1,1353 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:context="com.chronokart.Chronometre">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tour_actuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tour_actuel"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/chrono_actuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                android:translationX="245dp"
+                android:translationY="-30dp" />
+
+            <TextView
+                android:id="@+id/tour_precedent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tour_pr_c_dent"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:translationY="-30dp" />
+
+            <TextView
+                android:id="@+id/chrono_precedent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-55dp" />
+
+            <Button
+                android:id="@+id/Start"
+                android:layout_width="600px"
+                android:layout_height="600px"
+                android:background="@drawable/start"
+                android:hapticFeedbackEnabled="true"
+                android:translationX="86dp"
+                android:translationY="70dp" />
+
+            <Button
+                android:id="@+id/Stop"
+                android:layout_width="600px"
+                android:layout_height="600px"
+                android:background="@drawable/stop"
+                android:hapticFeedbackEnabled="true"
+                android:translationX="85dp"
+                android:translationY="-163dp" />
+
+            <TextView
+                android:id="@+id/tour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/tour"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationY="-30dp" />
+
+            <TextView
+                android:id="@+id/temps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="268dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/temps"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:translationY="-75dp" />
+
+            <TextView
+                android:id="@+id/_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_1"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-180dp" />
+
+            <TextView
+                android:id="@+id/_2"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_2"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-265dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-295dp" />
+
+            <TextView
+                android:id="@+id/_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_3"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-380dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-410dp" />
+
+            <TextView
+                android:id="@+id/_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_4"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-495dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-525dp" />
+
+            <TextView
+                android:id="@+id/_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_5"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-610dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-640dp" />
+
+            <TextView
+                android:id="@+id/_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_6"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-725dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-755dp" />
+
+            <TextView
+                android:id="@+id/_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_7"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-840dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-870dp" />
+
+            <TextView
+                android:id="@+id/_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_8"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-955dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-985dp" />
+
+            <TextView
+                android:id="@+id/_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_9"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-1070dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-1100dp" />
+
+            <TextView
+                android:id="@+id/_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_10"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-1185dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-1215dp" />
+
+            <TextView
+                android:id="@+id/_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_11"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-1300dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-1330dp" />
+
+            <TextView
+                android:id="@+id/_12"
+                android:layout_width="33dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_12"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-1415dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-1445dp" />
+
+            <TextView
+                android:id="@+id/_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_13"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-1530dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-1560dp" />
+
+            <TextView
+                android:id="@+id/_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_14"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-1645dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-1675dp" />
+
+            <TextView
+                android:id="@+id/_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_15"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-1760dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-1790dp" />
+
+            <TextView
+                android:id="@+id/_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_16"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-1875dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-1905dp" />
+
+            <TextView
+                android:id="@+id/_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_17"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-1990dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-2020dp" />
+
+            <TextView
+                android:id="@+id/_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_18"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-2105dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-2135dp" />
+
+            <TextView
+                android:id="@+id/_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_19"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-2220dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-2250dp" />
+
+            <TextView
+                android:id="@+id/_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_20"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-2335dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-2365dp" />
+
+            <TextView
+                android:id="@+id/_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_21"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-2450dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-2480dp" />
+
+            <TextView
+                android:id="@+id/_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_22"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-2565dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-2595dp" />
+
+            <TextView
+                android:id="@+id/_23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_23"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-2680dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-2710dp" />
+
+            <TextView
+                android:id="@+id/_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_24"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-2795dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-2825dp" />
+
+            <TextView
+                android:id="@+id/_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_25"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-2910dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-2940dp" />
+
+            <TextView
+                android:id="@+id/_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_26"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-3025dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-3055dp" />
+
+            <TextView
+                android:id="@+id/_27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_27"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-3140dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-3170dp" />
+
+            <TextView
+                android:id="@+id/_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_28"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-3255dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-3285dp" />
+
+            <TextView
+                android:id="@+id/_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_29"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-3370dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-3400dp" />
+
+            <TextView
+                android:id="@+id/_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_30"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-3485dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-3515dp" />
+
+            <TextView
+                android:id="@+id/_31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_31"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-3600dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-3630dp" />
+
+            <TextView
+                android:id="@+id/_32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_32"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-3715dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-3745dp" />
+
+            <TextView
+                android:id="@+id/_33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_33"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-3830dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-3860dp" />
+
+            <TextView
+                android:id="@+id/_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_34"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-3945dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-3975dp" />
+
+            <TextView
+                android:id="@+id/_35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_35"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-4060dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-4090dp" />
+
+            <TextView
+                android:id="@+id/_36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_36"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-4175dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-4205dp" />
+
+            <TextView
+                android:id="@+id/_37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_37"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-4290dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-4320dp" />
+
+            <TextView
+                android:id="@+id/_38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_38"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-4405dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-4435dp" />
+
+            <TextView
+                android:id="@+id/_39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_39"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-4520dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-4550dp" />
+
+            <TextView
+                android:id="@+id/_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_40"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-4635dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-4665dp" />
+
+            <TextView
+                android:id="@+id/_41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_41"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-4750dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-4780dp" />
+
+            <TextView
+                android:id="@+id/_42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_42"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-4865dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-4895dp" />
+
+            <TextView
+                android:id="@+id/_43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_43"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-4980dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-5010dp" />
+
+            <TextView
+                android:id="@+id/_44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_44"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-5095dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-5125dp" />
+
+            <TextView
+                android:id="@+id/_45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_45"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-5210dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-5240dp" />
+
+            <TextView
+                android:id="@+id/_46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_46"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-5325dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-5355dp" />
+
+            <TextView
+                android:id="@+id/_47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_47"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-5440dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-5470dp" />
+
+            <TextView
+                android:id="@+id/_48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_48"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-5555dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-5585dp" />
+
+            <TextView
+                android:id="@+id/_49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_49"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-5670dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-5700dp" />
+
+            <TextView
+                android:id="@+id/_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="104dp"
+                android:text="@string/_50"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="-5785dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/chrono50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0_00_000"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:translationX="260dp"
+                android:translationY="-5815dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
